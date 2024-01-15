@@ -8,10 +8,9 @@
 public class GameOfLife {
 
 	public static void main(String[] args) {
-		//String fileName = args[0];
-		String fileName = "square.dat";
+		String fileName = args[0];
 
-		test1(fileName);
+		//test1(fileName);
 		//test2(fileName);
 		//test3(fileName, 3);
 		//play(fileName);

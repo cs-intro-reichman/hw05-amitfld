@@ -8,12 +8,12 @@
 public class GameOfLife {
 
 	public static void main(String[] args) {
-		String fileName = args[0];
-		// String fileName = "square.dat";
+		//String fileName = args[0];
+		String fileName = "line.dat";
 
-		//test1(fileName);
-		//test2(fileName);
-		//test3(fileName, 3);
+		test1(fileName);
+		test2(fileName);
+		test3(fileName, 3);
 		//play(fileName);
 	}
 	
@@ -113,7 +113,7 @@ public class GameOfLife {
 
 		for (int i = 1; i < board.length - 1; i++){
 			for (int j = 1; j < board[0].length - 1; j++){
-				newBoard[i][j] = cellValue(board, i, j);
+				newBoard[i][j] = cellValue(board, i+1, j+1);
 			}
 		}
 		return newBoard;

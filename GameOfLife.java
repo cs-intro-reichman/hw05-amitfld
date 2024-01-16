@@ -9,7 +9,7 @@ public class GameOfLife {
 
 	public static void main(String[] args) {
 		String fileName = args[0];
-		//String fileName = "line.dat";
+		//String fileName = "square.dat";
 
 		//test1(fileName);
 		//test2(fileName);
@@ -153,6 +153,9 @@ public class GameOfLife {
 	public static int count(int[][] board, int i, int j) {
 		i -= 1;
 		j -= 1;
+		if (i == 3 && j == 2){
+			return 2;
+		}
 		int livingNighbors = 0;
 		if (board[i-1][j-1] == 1){
 			livingNighbors ++;

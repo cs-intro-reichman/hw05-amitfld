@@ -132,7 +132,7 @@ public class GameOfLife {
 		i -= 1;
 		j -= 1;
 		int cellVal = board[i][j];
-		int count = count(board, i, j);
+		int count = count(board, i+1, j+1);
 
 		if (cellVal == 1){
 			if (count < 2 || count > 3){
@@ -151,6 +151,8 @@ public class GameOfLife {
 	// Assumes that i is at least 1 and at most the number of rows in the board - 1. 
 	// Assumes that j is at least 1 and at most the number of columns in the board - 1. 
 	public static int count(int[][] board, int i, int j) {
+		i -= 1;
+		j -= 1;
 		int livingNighbors = 0;
 		if (board[i-1][j-1] == 1){
 			livingNighbors ++;

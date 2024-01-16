@@ -9,6 +9,7 @@ public class GameOfLife {
 
 	public static void main(String[] args) {
 		String fileName = args[0];
+		//String fileName = "square.dat";
 
 		//test1(fileName);
 		//test2(fileName);
@@ -149,8 +150,8 @@ public class GameOfLife {
 	// Assumes that i is at least 1 and at most the number of rows in the board - 1. 
 	// Assumes that j is at least 1 and at most the number of columns in the board - 1. 
 	public static int count(int[][] board, int i, int j) {
-		i -= 1;
-		j -= 1;
+		i += 1;
+		j += 1;
 		int livingNighbors = 0;
 		if (board[i-1][j-1] == 1){
 			livingNighbors ++;

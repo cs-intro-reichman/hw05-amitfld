@@ -8,12 +8,12 @@
 public class GameOfLife {
 
 	public static void main(String[] args) {
-		//String fileName = args[0];
-		String fileName = "line.dat";
+		String fileName = args[0];
+		//String fileName = "line.dat";
 
-		test1(fileName);
-		test2(fileName);
-		test3(fileName, 3);
+		//test1(fileName);
+		//test2(fileName);
+		//test3(fileName, 3);
 		//play(fileName);
 	}
 	
